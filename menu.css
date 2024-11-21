@@ -1,0 +1,116 @@
+/* Remove padding and margins */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Change the background color to a light gray and font family */
+body{
+    background-color: #eee;
+}
+/* Setting the background color to black and changing the color of the text to white */
+header{
+    background-color: black;
+    color: white;
+}
+/* Making the header as a flex container and setting space between the items */
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Makes the list a flex container and removes the bullets */
+.container ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+/* Setting the space between the items */
+.container ul li{
+    padding: 10px;
+}
+/* Removing the underline and setting the color to white */
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Adding the hero image and setting text to the center */
+.hero{
+    background-image: url(images/bg.avif);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    text-align: center;
+}
+/* Making the heading two bigger and putting space between it and the space below */
+.hero-content h2{
+    font-size: 3em;
+    margin-bottom: 2px;
+}
+/* Making a button for the hyperlink */
+.hero-content a{
+    padding: .25em 2em;
+    background-color: orange;
+    border-radius: 5px;
+}
+/* Making the menu a flex box */
+.menu-grid {
+    display: flex;
+    justify-content: space-between;
+}
+/* Aligning the text to the center and putting space around it */
+.menu-section{
+    text-align: center;
+    margin: 50px;
+}
+/* Putting space in between the header and the menu items */
+.menu-section h2{
+    margin-bottom: 20px;
+}
+/* Setting the area around the menu content and changing the background of it to white */
+.menu-item{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Putting a radius around the image to make the edges around */
+.menu-item img{
+    border-radius: 10px;
+}
+/* Setting the background color to white, aligning the text to the center, and adding space around the content */
+.about{
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+}
+/* Aligning the text to the center and putting space around the content */
+.contact{
+    text-align: center;
+    padding: 60px;
+}
+/* Setting the background color to black, Changing the color fo the text to white, aligning the text to the center, and putting space around the content */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+@media (max-width: 768px){
+    header .container{
+        flex-direction: column;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+    
+    nav ul li{
+        margin: 10px 0;
+    }
+    .menu-grid .menu-item {
+        flex-direction: column;
+    }
+}
